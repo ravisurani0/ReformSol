@@ -4,7 +4,7 @@
 :root {
     --fontFamily: 'Viga', sans-serif;
     --fontFamily2: 'Roboto', sans-serif;
-    --mainColor: #0064fb;
+    --mainColor: #0064fbc9;
     --secondColor: #2e2f46;
     --thirdColor: #ff414b;
     --thirdColorShadow: #ffeced;
@@ -86,14 +86,16 @@ body {
 
 .default-button-3-h:hover {
     color: var(--whiteColor);
-    border: 1px solid var(--mainColor);
-    background-color: var(--mainColor)
+    border: 1px solid var(--fix-blackColor);
+    background-color: var(--fix-blackColor)
 }
 
 .default-button-3-h:hover i {
     color: var(--mainColor);
     background-color: var(--whiteColor)
 }
+
+
 
 h1,
 h2,
@@ -416,7 +418,7 @@ a.meanmenu-reveal {
 
 .mean-container a.meanmenu-reveal span {
     display: block;
-    background: var(--mainColor);
+    background: var(--fix-blackColor);
     height: 4px;
     margin-top: 5px;
     border-radius: 3px
@@ -1126,40 +1128,6 @@ a.meanmenu-reveal {
 
 .stars ul li i {
     cursor: pointer
-}
-
-.buy-now-btn {
-    right: 10px;
-    z-index: 99;
-    top: 50%;
-    position: fixed;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-radius: 30px;
-    display: inline-block;
-    color: var(--whiteColor);
-    background-color: #82b440;
-    padding: 10px 15px 10px 37px;
-    -webkit-box-shadow: 0 1px 10px 1px var(--mainColor);
-    box-shadow: 0 1px 10px 1px var(--mainColor);
-    -webkit-animation: jello 3s infinite;
-    animation: jello 3s infinite;
-    font-size: 12px;
-    font-weight: 600
-}
-
-.buy-now-btn img {
-    top: 50%;
-    left: 15px;
-    width: 15px;
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
-}
-
-.buy-now-btn:hover {
-    color: #fff;
-    background-color: var(--mainColor)
 }
 
 .default-button {
