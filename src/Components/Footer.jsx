@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Footer() {
     return (
         <>
+
+            <div className="go-top"><i className="fab fa-airbnb"></i></div>
             <div className="footer ptb-100 bg-f9faff">
                 <div className="container">
                     <div className="row">
@@ -55,16 +58,16 @@ function Footer() {
                             <div className="footer-links footer-quick-links">
                                 <h3>Quick Links</h3>
                                 <ul>
-                                    <li><a href="about.html" target="_blank"><i className="fas fa-angle-right"></i>
-                                        <span>About</span></a></li>
-                                    <li><a href="services.html" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
-                                        Services</span></a></li>
-                                    <li><a href="testimonial.html" target="_blank"><i className="fas fa-angle-right"></i>
-                                        <span>Testimonials</span></a></li>
-                                    <li><a href="team.html" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
-                                        Team</span></a></li>
-                                    <li><a href="blog.html" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
-                                        Blog</span></a></li>
+                                    {/* <li><Link to="about.html" target="_blank"><i className="fas fa-angle-right"></i>
+                                        <span>About</span></Link></li> */}
+                                    <li><Link to="/services" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
+                                        Services</span></Link></li>
+                                    <li><Link to="/case-study" target="_blank"><i className="fas fa-angle-right"></i>
+                                        <span>Case Study</span></Link></li>
+                                    <li><Link to="/our-team" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
+                                        Team</span></Link></li>
+                                    <li><Link to="/blogs" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
+                                        Blog</span></Link></li>
                                 </ul>
                             </div>
                         </div>

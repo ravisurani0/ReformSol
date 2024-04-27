@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 function Header() {
     return (
         <>
+            <ScrollToTop />
             <div className="header-area header-area-2">
                 <div className="navbar-area">
                     <div className="main-responsive-nav">
                         <div className="container">
                             <div className="mobile-nav">
-                                <a href="index.html" className="logo">
+                                <Link to="/" className="logo">
                                     <img className="black-logo" src="assets/images/logo.png" alt="logo" />
-                                </a>
+                                </Link>
                                 <div className="menu-sidebar-1 menu-small-device">
                                     <div className="call-button">
                                         <i className="fas fa-headset"></i>
@@ -24,9 +26,9 @@ function Header() {
                     <div className="main-nav">
                         <div className="container">
                             <nav className="navbar navbar-expand-md navbar-light">
-                                <a className="navbar-brand" href="index.html">
+                                <Link className="navbar-brand" to="/">
                                     <img className="black-logo" src="assets/images/logo.png" alt="logo" />
-                                </a>
+                                </Link>
                                 <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                     <ul className="navbar-nav">
                                         <li className="nav-item plus-icon">
@@ -44,10 +46,12 @@ function Header() {
                                         <li className="nav-item">
                                             <Link to={"/blogs"} className="nav-link ">Blog</Link>
                                         </li>
-                                        <li className="nav-item"><a href="contact.html" className="nav-link">Contact Us</a></li>
+                                        <li className="nav-item">
+                                            <Link to={"/contact"} className="nav-link">Contact Us</Link>
+                                        </li>
                                     </ul>
                                     <div className="menu-sidebar menu-sidebar-1">
-                                        <a className="default-button-3 default-button-3-h" href="contact.html">Get Started <i className="fas fa-long-arrow-alt-right"></i></a>
+                                        <Link className="default-button-3 default-button-3-h" to={"/contact"}>Get Started <i className="fas fa-long-arrow-alt-right"></i></Link>
                                         <div className="call-button">
                                             <i className="fas fa-headset"></i>
                                             <p>Have Any <span>Questions?</span></p>
@@ -60,6 +64,7 @@ function Header() {
                     </div>
                 </div>
             </div>
+
         </>
     );
 }

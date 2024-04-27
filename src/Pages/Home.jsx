@@ -72,9 +72,9 @@ function Home() {
                                     <div className="service-card-2-img">
                                         <img src="assets/images/icons/011-content-1.png" alt="image" />
                                     </div>
-                                    <h4><a href="service-details.html">Content Management</a></h4>
+                                    <h4><a href="#">Content Management</a></h4>
                                     <p>Empower your business with cutting-edge content management solutions tailored for seamless digital experiences.</p>
-                                    <a className="default-button-3 default-button-3-h" href="service-details.html">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
+                                    <a className="default-button-3 default-button-3-h" href="#">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                             <div className="service-card-2">
@@ -83,9 +83,9 @@ function Home() {
                                     <div className="service-card-2-img">
                                         <img src="assets/images/icons/012-analytic.png" alt="image" />
                                     </div>
-                                    <h4><a href="service-details.html">Statistic Analysis</a></h4>
+                                    <h4><a href="#">Statistic Analysis</a></h4>
                                     <p>Unlock the power of data with our advanced statistical analysis solutions designed for dynamic business insights.</p>
-                                    <a className="default-button-3 default-button-3-h" href="service-details.html">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
+                                    <a className="default-button-3 default-button-3-h" href="#">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                             <div className="service-card-2">
@@ -94,9 +94,9 @@ function Home() {
                                     <div className="service-card-2-img">
                                         <img src="assets/images/icons/013-customer-service-agent.png" alt="image" />
                                     </div>
-                                    <h4><a href="service-details.html">Support Service</a></h4>
+                                    <h4><a href="#">Support Service</a></h4>
                                     <p>Experience unparalleled support with our dedicated service team, available 24/7 to ensure your operations run smoothly.</p>
-                                    <a className="default-button-3 default-button-3-h" href="service-details.html">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
+                                    <a className="default-button-3 default-button-3-h" href="#">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                             <div className="service-card-2">
@@ -105,9 +105,9 @@ function Home() {
                                     <div className="service-card-2-img">
                                         <img src="assets/images/icons/025-browser.png" alt="image" />
                                     </div>
-                                    <h4><a href="service-details.html">Security Management</a></h4>
+                                    <h4><a href="#">Security Management</a></h4>
                                     <p>Fortify your digital landscape with our comprehensive security management services, designed to protect against evolving cyber threats.</p>
-                                    <a className="default-button-3 default-button-3-h" href="service-details.html">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
+                                    <a className="default-button-3 default-button-3-h" href="#">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +138,7 @@ function Home() {
                                         <li>Best odio velit auctor nam elit nulla eget sodales dui pulvinar.</li>
                                     </ul>
                                 </div>
-                                <a className="default-button-3" href="about.html">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
+                                <a className="default-button-3" href="#">Read More <i className="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@ function Home() {
                                         <img src="assets/images/icons/022-language.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Product Engineering</a></h4>
+                                        <h4><a href="#">Product Engineering</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@ function Home() {
                                         <img src="assets/images/icons/023-driver-license.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">License Management</a></h4>
+                                        <h4><a href="#">License Management</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -182,7 +182,7 @@ function Home() {
                                         <img src="assets/images/icons/024-data.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Real Time & Data</a></h4>
+                                        <h4><a href="#">Real Time & Data</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@ function Home() {
                                         <img src="assets/images/icons/025-browser.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Automatic Updates</a></h4>
+                                        <h4><a href="#">Automatic Updates</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -204,7 +204,7 @@ function Home() {
                                         <img src="assets/images/icons/026-compliant.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Quality Product</a></h4>
+                                        <h4><a href="#">Quality Product</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -215,7 +215,7 @@ function Home() {
                                         <img src="assets/images/icons/029-fair.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Access Benefits</a></h4>
+                                        <h4><a href="#">Access Benefits</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -258,7 +258,7 @@ function Home() {
                                         <img src="assets/images/icons/028-analytics.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Better Comparison</a></h4>
+                                        <h4><a href="#">Better Comparison</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -269,7 +269,7 @@ function Home() {
                                         <img src="assets/images/icons/029-fair.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Breaking The Rules</a></h4>
+                                        <h4><a href="#">Breaking The Rules</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -280,7 +280,7 @@ function Home() {
                                         <img src="assets/images/icons/030-pencil.png" alt="image" />
                                     </div>
                                     <div className="features-card-text-area">
-                                        <h4><a href="about.html">Faster Enrollments</a></h4>
+                                        <h4><a href="#">Faster Enrollments</a></h4>
                                         <p>Building it before the de dolor sit full fledged application is openlir that always payset goden</p>
                                     </div>
                                 </div>
@@ -524,7 +524,7 @@ function Home() {
                             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="blog-card blog-card-2">
                                     <div className="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b1.jpg" alt="image" /></a>
+                                        <a href="#"><img src="assets/images/blog/b1.jpg" alt="image" /></a>
                                     </div>
                                     <div className="blog-text-area">
                                         <div className="blog-date">
@@ -534,14 +534,14 @@ function Home() {
                                                 <li><i className="far fa-calendar-alt"></i> 01 July 2021</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Some Important Rules To Start A New Business</a></h4>
+                                        <h4><a href="#">Some Important Rules To Start A New Business</a></h4>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="blog-card blog-card-2">
                                     <div className="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b3.jpg" alt="image" /></a>
+                                        <a href="#"><img src="assets/images/blog/b3.jpg" alt="image" /></a>
                                     </div>
                                     <div className="blog-text-area">
                                         <div className="blog-date">
@@ -551,14 +551,14 @@ function Home() {
                                                 <li><i className="far fa-calendar-alt"></i> 03 July 2021</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Know Top Ten Rules For Corporate Business</a></h4>
+                                        <h4><a href="#">Know Top Ten Rules For Corporate Business</a></h4>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="blog-card blog-card-2">
                                     <div className="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b2.jpg" alt="image" /></a>
+                                        <a href="#"><img src="assets/images/blog/b2.jpg" alt="image" /></a>
                                     </div>
                                     <div className="blog-text-area">
                                         <div className="blog-date">
@@ -568,7 +568,7 @@ function Home() {
                                                 <li><i className="far fa-calendar-alt"></i> 01 July 2021</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Why Would You Need Some New Business</a></h4>
+                                        <h4><a href="#">Why Would You Need Some New Business</a></h4>
                                     </div>
                                 </div>
                             </div>

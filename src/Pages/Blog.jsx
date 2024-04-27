@@ -1,14 +1,95 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Blogs() {
+    const blogList = [
+        {
+            slug: `Some-Important-Rules-To-Start-A-New-Business`,
+            tite: `Some Important Rules To Start A New Business`,
+            img: `assets/images/blog/b1.jpg`,
+            details: `<div><div class="blog-details-text-area details-text-area pr-20"><img src="assets/images/blog/b1.jpg"alt="image"><h3>Some Important Rules To Start A New Business</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p><div class="blog-quote"><p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charmsof pleasure of the moment.</p><h5><i class="fas fa-quote-right"></i> <span>Katherine</span></h5></div><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p></div><div class="blog-text-footer pr-20"><div class="tag-area"><ul><li><i class="fas fa-tags"></i></li><li>Strategy,</li><li>Marketing,</li><li>Support</li></ul></div><div class="social-icons"><ul><li><span>Share:</span></li><li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li><li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li></ul></div></div><div class="bd-comments details-text-area pr-20"><h3>Comments</h3><div class="comment-card"><img src="assets/images/testimonial/tc1.jpg" alt="image"><h5>David Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div><div class="comment-card"><img src="assets/images/testimonial/tc2.jpg" alt="image"><h5>Jemmy Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div></div><div class="bd-form details-text-area bg-f9faff pr-20" id="bd-form"><h3>Leave A Reply</h3><form><div class="row"><div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required=""></div><div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Phone" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Website" required=""></div><div class="col-md-12"><textarea rows="5" class="form-control" placeholder="Message"required=""></textarea></div><div class="col-md-12"><button class="default-button" type="submit"><span>Post AComment</span></button></div></div></form></div></div>`,
+            date: `01 July 2021`,
+            comments: [
+                {
+                    name: `user 1`,
+                    comment: ` comment content`
+                },
+            ],
+        },
+        {
+            slug: `Why-Would-You-Need-Some-New-Business`,
+            tite: `Why Would You Need Some New Business`,
+            img: `assets/images/blog/b2.jpg`,
+            details: `<div><div class="blog-details-text-area details-text-area pr-20"><img src="assets/images/blog/b2.jpg"alt="image"><h3>Why Would You Need Some New Business</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p><div class="blog-quote"><p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charmsof pleasure of the moment.</p><h5><i class="fas fa-quote-right"></i> <span>Katherine</span></h5></div><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p></div><div class="blog-text-footer pr-20"><div class="tag-area"><ul><li><i class="fas fa-tags"></i></li><li>Strategy,</li><li>Marketing,</li><li>Support</li></ul></div><div class="social-icons"><ul><li><span>Share:</span></li><li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li><li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li></ul></div></div><div class="bd-comments details-text-area pr-20"><h3>Comments</h3><div class="comment-card"><img src="assets/images/testimonial/tc1.jpg" alt="image"><h5>David Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div><div class="comment-card"><img src="assets/images/testimonial/tc2.jpg" alt="image"><h5>Jemmy Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div></div><div class="bd-form details-text-area bg-f9faff pr-20" id="bd-form"><h3>Leave A Reply</h3><form><div class="row"><div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required=""></div><div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Phone" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Website" required=""></div><div class="col-md-12"><textarea rows="5" class="form-control" placeholder="Message"required=""></textarea></div><div class="col-md-12"><button class="default-button" type="submit"><span>Post AComment</span></button></div></div></form></div></div>`,
+            date: `01 July 2021`,
+            comments: [
+                {
+                    name: `user 1`,
+                    comment: ` comment content`
+                },
+            ],
+        },
+        {
+            slug: `Know-Top-Ten-Rules-For-Corporate-Business`,
+            tite: `Know Top Ten Rules For Corporate Business`,
+            img: `assets/images/blog/b3.jpg`,
+            details: `<div><div class="blog-details-text-area details-text-area pr-20"><img src="assets/images/blog/b3.jpg"alt="image"><h3>Know Top Ten Rules For Corporate Business</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p><div class="blog-quote"><p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charmsof pleasure of the moment.</p><h5><i class="fas fa-quote-right"></i> <span>Katherine</span></h5></div><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p></div><div class="blog-text-footer pr-20"><div class="tag-area"><ul><li><i class="fas fa-tags"></i></li><li>Strategy,</li><li>Marketing,</li><li>Support</li></ul></div><div class="social-icons"><ul><li><span>Share:</span></li><li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li><li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li></ul></div></div><div class="bd-comments details-text-area pr-20"><h3>Comments</h3><div class="comment-card"><img src="assets/images/testimonial/tc1.jpg" alt="image"><h5>David Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div><div class="comment-card"><img src="assets/images/testimonial/tc2.jpg" alt="image"><h5>Jemmy Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div></div><div class="bd-form details-text-area bg-f9faff pr-20" id="bd-form"><h3>Leave A Reply</h3><form><div class="row"><div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required=""></div><div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Phone" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Website" required=""></div><div class="col-md-12"><textarea rows="5" class="form-control" placeholder="Message"required=""></textarea></div><div class="col-md-12"><button class="default-button" type="submit"><span>Post AComment</span></button></div></div></form></div></div>`,
+            date: `01 July 2021`,
+            comments: [
+                {
+                    name: `user 1`,
+                    comment: ` comment content`
+                },
+            ],
+        },
+        {
+            slug: `The-Biggest-`,
+            tite: `The Biggest Contribution Of Corporate Business World.`,
+            img: `assets/images/blog/b4.jpg`,
+            details: `<div><div class="blog-details-text-area details-text-area pr-20"><img src="assets/images/blog/b4.jpg"alt="image"><h3>The Biggest Contribution Of Corporate Business World.</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p><div class="blog-quote"><p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charmsof pleasure of the moment.</p><h5><i class="fas fa-quote-right"></i> <span>Katherine</span></h5></div><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p></div><div class="blog-text-footer pr-20"><div class="tag-area"><ul><li><i class="fas fa-tags"></i></li><li>Strategy,</li><li>Marketing,</li><li>Support</li></ul></div><div class="social-icons"><ul><li><span>Share:</span></li><li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li><li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li></ul></div></div><div class="bd-comments details-text-area pr-20"><h3>Comments</h3><div class="comment-card"><img src="assets/images/testimonial/tc1.jpg" alt="image"><h5>David Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div><div class="comment-card"><img src="assets/images/testimonial/tc2.jpg" alt="image"><h5>Jemmy Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div></div><div class="bd-form details-text-area bg-f9faff pr-20" id="bd-form"><h3>Leave A Reply</h3><form><div class="row"><div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required=""></div><div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Phone" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Website" required=""></div><div class="col-md-12"><textarea rows="5" class="form-control" placeholder="Message"required=""></textarea></div><div class="col-md-12"><button class="default-button" type="submit"><span>Post AComment</span></button></div></div></form></div></div>`,
+            date: `01 July 2021`,
+            comments: [
+                {
+                    name: `user 1`,
+                    comment: ` comment content`
+                },
+            ],
+        },
+        {
+            slug: `Why-Would-You-Need-Some-New-Business`,
+            tite: `Why Would You Need Some New Business`,
+            img: `assets/images/blog/b5.jpg`,
+            details: `<div><div class="blog-details-text-area details-text-area pr-20"><img src="assets/images/blog/b5.jpg"alt="image"><h3>Why Would You Need Some New Business</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p><div class="blog-quote"><p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charmsof pleasure of the moment.</p><h5><i class="fas fa-quote-right"></i> <span>Katherine</span></h5></div><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p></div><div class="blog-text-footer pr-20"><div class="tag-area"><ul><li><i class="fas fa-tags"></i></li><li>Strategy,</li><li>Marketing,</li><li>Support</li></ul></div><div class="social-icons"><ul><li><span>Share:</span></li><li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li><li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li></ul></div></div><div class="bd-comments details-text-area pr-20"><h3>Comments</h3><div class="comment-card"><img src="assets/images/testimonial/tc1.jpg" alt="image"><h5>David Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div><div class="comment-card"><img src="assets/images/testimonial/tc2.jpg" alt="image"><h5>Jemmy Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div></div><div class="bd-form details-text-area bg-f9faff pr-20" id="bd-form"><h3>Leave A Reply</h3><form><div class="row"><div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required=""></div><div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Phone" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Website" required=""></div><div class="col-md-12"><textarea rows="5" class="form-control" placeholder="Message"required=""></textarea></div><div class="col-md-12"><button class="default-button" type="submit"><span>Post AComment</span></button></div></div></form></div></div>`,
+            date: `01 July 2021`,
+            comments: [
+                {
+                    name: `user 1`,
+                    comment: ` comment content`
+                },
+            ],
+        },
+        {
+            slug: `Know-Top-Ten-Rules-For-Corporate-Business`,
+            tite: `Know Top Ten Rules For Corporate Business`,
+            img: `assets/images/blog/b6.jpg`,
+            details: `<div><div class="blog-details-text-area details-text-area pr-20"><img src="assets/images/blog/b6.jpg"alt="image"><h3>Know Top Ten Rules For Corporate Business</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p><div class="blog-quote"><p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charmsof pleasure of the moment.</p><h5><i class="fas fa-quote-right"></i> <span>Katherine</span></h5></div><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore doloremagna ut aliqua quis ipsum facilisis. It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has amore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making itlook like readable English.</p></div><div class="blog-text-footer pr-20"><div class="tag-area"><ul><li><i class="fas fa-tags"></i></li><li>Strategy,</li><li>Marketing,</li><li>Support</li></ul></div><div class="social-icons"><ul><li><span>Share:</span></li><li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li><li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li><li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li></ul></div></div><div class="bd-comments details-text-area pr-20"><h3>Comments</h3><div class="comment-card"><img src="assets/images/testimonial/tc1.jpg" alt="image"><h5>David Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div><div class="comment-card"><img src="assets/images/testimonial/tc2.jpg" alt="image"><h5>Jemmy Makel</h5><p>The bee's knees bite your arm off bits and bobs he nicked it gosh gutted mate blimey, old off his nutargy bargy vagabond buggered dropped.</p><a href="#bd-form">Reply</a></div></div><div class="bd-form details-text-area bg-f9faff pr-20" id="bd-form"><h3>Leave A Reply</h3><form><div class="row"><div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required=""></div><div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Phone" required=""></div><div class="col-md-6"><input type="text" class="form-control" placeholder="Website" required=""></div><div class="col-md-12"><textarea rows="5" class="form-control" placeholder="Message"required=""></textarea></div><div class="col-md-12"><button class="default-button" type="submit"><span>Post AComment</span></button></div></div></form></div></div>`,
+            date: `01 July 2021`,
+            comments: [
+                {
+                    name: `user 1`,
+                    comment: ` comment content`
+                },
+            ],
+        },
+    ];
 
     return (
         <>
-            <div class="uni-banner">
-                <div class="container">
-                    <div class="uni-banner-text-area">
+            <div className="uni-banner">
+                <div className="container">
+                    <div className="uni-banner-text-area">
                         <h1>Our Latest News</h1>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><Link href="/">Home</Link></li>
                             <li>Blogs</li>
                         </ul>
                     </div>
@@ -16,135 +97,38 @@ function Blogs() {
             </div>
 
 
-            <div class="blog ptb-100">
-                <div class="container">
-                    <div class="default-section-title default-section-title-middle">
+            <div className="blog ptb-100">
+                <div className="container">
+                    <div className="default-section-title default-section-title-middle">
                         <h6>OUR BLOG</h6>
                         <h3>Our Popular Blog Post</h3>
                     </div>
-                    <div class="section-content">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="blog-card">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b1.jpg" alt="image"/></a>
-                                    </div>
-                                    <div class="blog-text-area">
-                                        <span>TECHNOLOGY</span>
-                                        <div class="blog-date">
-                                            <ul>
-                                                <li><i class="fas fa-user"></i> By Admin</li>
-                                                <li><i class="far fa-comments"></i> No Comments</li>
-                                                <li><i class="far fa-calendar-alt"></i> 01 July 2021</li>
-                                            </ul>
+                    <div className="section-content">
+                        <div className="row justify-content-center">
+                            {blogList?.length && blogList.map(blog =>
+                                <div className="col-lg-4 col-md-6 col-sm-12 col-12">
+                                    <div className="blog-card">
+                                        <div className="blog-img">
+                                            <Link to={`/blog/${blog.slug}`}><img src={blog.img} alt="image" /></Link>
                                         </div>
-                                        <h4><a href="blog-details.html">Some Important Rules To Start A New Business</a></h4>
+                                        <div className="blog-text-area">
+                                            <span>TECHNOLOGY</span>
+                                            <div className="blog-date">
+                                                <ul>
+                                                    <li><i className="fas fa-user"></i> By Admin</li>
+                                                    <li><i className="far fa-comments"></i> {blog.comments.length}</li>
+                                                    <li><i className="far fa-calendar-alt"></i>{blog.date}</li>
+                                                </ul>
+                                            </div>
+                                            <h4><Link to={`/blog/${blog.slug}`}>{blog.tite}</Link></h4>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="blog-card">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b2.jpg" alt="image"/></a>
-                                    </div>
-                                    <div class="blog-text-area">
-                                        <span>DEVELOPMENT</span>
-                                        <div class="blog-date">
-                                            <ul>
-                                                <li><i class="fas fa-user"></i> By Admin</li>
-                                                <li><i class="far fa-comments"></i> No Comments</li>
-                                                <li><i class="far fa-calendar-alt"></i> 01 July 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="blog-details.html">Why Would You Need Some New Business</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="blog-card">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b3.jpg" alt="image"/></a>
-                                    </div>
-                                    <div class="blog-text-area">
-                                        <span>STRATEGY</span>
-                                        <div class="blog-date">
-                                            <ul>
-                                                <li><i class="fas fa-user"></i> By Admin</li>
-                                                <li><i class="far fa-comments"></i> No Comments</li>
-                                                <li><i class="far fa-calendar-alt"></i> 03 July 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="blog-details.html">Know Top Ten Rules For Corporate Business</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="blog-card">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b4.jpg" alt="image"/></a>
-                                    </div>
-                                    <div class="blog-text-area">
-                                        <span>TECHNOLOGY</span>
-                                        <div class="blog-date">
-                                            <ul>
-                                                <li><i class="fas fa-user"></i> By Admin</li>
-                                                <li><i class="far fa-comments"></i> No Comments</li>
-                                                <li><i class="far fa-calendar-alt"></i> 01 July 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="blog-details.html">The Biggest Contribution Of Corporate Business
-                                            World.</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="blog-card">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b5.jpg" alt="image"/></a>
-                                    </div>
-                                    <div class="blog-text-area">
-                                        <span>DEVELOPMENT</span>
-                                        <div class="blog-date">
-                                            <ul>
-                                                <li><i class="fas fa-user"></i> By Admin</li>
-                                                <li><i class="far fa-comments"></i> No Comments</li>
-                                                <li><i class="far fa-calendar-alt"></i> 01 July 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="blog-details.html">Why Would You Need Some New Business</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div class="blog-card">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html"><img src="assets/images/blog/b6.jpg" alt="image"/></a>
-                                    </div>
-                                    <div class="blog-text-area">
-                                        <span>STRATEGY</span>
-                                        <div class="blog-date">
-                                            <ul>
-                                                <li><i class="fas fa-user"></i> By Admin</li>
-                                                <li><i class="far fa-comments"></i> No Comments</li>
-                                                <li><i class="far fa-calendar-alt"></i> 03 July 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="blog-details.html">Know Top Ten Rules For Corporate Business</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pagination mt-30">
-                            <ul>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#"><i class="fas fa-arrow-right"></i></a></li>
-                            </ul>
+                            )}
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 }
