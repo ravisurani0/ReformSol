@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 function Footer() {
     return (
         <>
-
             <div className="go-top"><i className="fab fa-airbnb"></i></div>
             <div className="footer ptb-100 bg-f9faff">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-5 col-md-6 col-sm-6 col-12">
                             <div className="footer-logo-area">
                                 <img className="black-logo" src="assets/images/logo.png" alt="logo" />
-                                <img className="white-logo" src="assets/images/white-logo.png" alt="logo" />
-                                <p>Lorem ipsum dolor sit amet, consec tetur elit eiusmod tempor incididunt labore dolore magna
-                                    aliqua consec tetur adipiscing elite sed do labor.</p>
-                                <div className="footer-social-icons">
+                                {/* <img className="white-logo" src="assets/images/white-logo.png" alt="logo" /> */}
+                                <p className="w-75" >Where Vision Meets Innovation. Crafting Tailored Software That Drives Business Success. Transform Your Ideas into Impactful Realities.
+
+.</p>
+                                {/* <div className="footer-social-icons">
                                     <span>Follow Us:</span>
                                     <ul>
                                         <li><a href="https://www.facebook.com/" target="_blank"><i
@@ -26,40 +26,16 @@ function Footer() {
                                         <li><a href="https://www.instagram.com/" target="_blank"><i
                                             className="fab fa-instagram"></i></a></li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div className="footer-links footer-contact-list">
-                                <h3>Get In Touch</h3>
-                                <div className="footer-content-card">
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    <h5>Location:</h5>
-                                    <p><a href="https://goo.gl/maps/LFFvE4dNnyq67gGeA">2976 Sunrise Avenue, Las Vegas, USA</a>
-                                    </p>
-                                </div>
-                                <div className="footer-content-card">
-                                    <i className="fas fa-envelope"></i>
-                                    <h5>Email:</h5>
-                                    <p><a
-                                        href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0f7c7a7f7f607d7b4f66756e61216c6062"><span
-                                            className="__cf_email__"
-                                            data-cfemail="483b3d3838273a3c0821322926662b2725">[email&#160;protected]</span></a>
-                                    </p>
-                                </div>
-                                <div className="footer-content-card">
-                                    <i className="fas fa-mobile-alt"></i>
-                                    <h5>Phone:</h5>
-                                    <p><a href="tel:+13454567877">+1-3454-5678-77</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+
+                        {/*<div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="footer-links footer-quick-links">
                                 <h3>Quick Links</h3>
                                 <ul>
-                                    {/* <li><Link to="about.html" target="_blank"><i className="fas fa-angle-right"></i>
-                                        <span>About</span></Link></li> */}
+                                    <li><Link to="about.html" target="_blank"><i className="fas fa-angle-right"></i>
+                                        <span>About</span></Link></li>
                                     <li><Link to="/services" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
                                         Services</span></Link></li>
                                     <li><Link to="/case-study" target="_blank"><i className="fas fa-angle-right"></i>
@@ -69,6 +45,31 @@ function Footer() {
                                     <li><Link to="/blogs" target="_blank"><i className="fas fa-angle-right"></i> <span>Our
                                         Blog</span></Link></li>
                                 </ul>
+                            </div> 
+                        </div>*/}
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div className="footer-links footer-contact-list">
+                                <h3>Get In Touch</h3>
+                                {/* <div className="footer-content-card">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                    <h5>Location:</h5>
+                                    <p><a href="https://goo.gl/maps/LFFvE4dNnyq67gGeA">2976 Sunrise Avenue, Las Vegas, USA</a>
+                                    </p>
+                                </div> */}
+                                <div className="footer-content-card">
+                                    <i className="fas fa-envelope"></i>
+                                    <h5>Email:</h5>
+                                    <p><a
+                                        href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0f7c7a7f7f607d7b4f66756e61216c6062"><span
+                                            className="__cf_email__"
+                                            data-cfemail="483b3d3838273a3c0821322926662b2725">support@reformsol.com</span></a>
+                                    </p>
+                                </div>
+                                <div className="footer-content-card">
+                                    <i className="fas fa-mobile-alt"></i>
+                                    <h5>Phone:</h5>
+                                    <p><a href="tel:+13454567877">+1-3454-5678-77</a></p>
+                                </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -85,9 +86,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-
+            </div >
             <div className="copyright bg-f9faff">
                 <div className="container">
                     <p>Copyright @
@@ -101,5 +100,4 @@ function Footer() {
         </>
     );
 }
-
 export default Footer;

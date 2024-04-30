@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 function Header() {
+
+
+
     return (
         <>
             <ScrollToTop />
@@ -17,7 +20,7 @@ function Header() {
                                     <div className="call-button">
                                         <i className="fas fa-headset"></i>
                                         <p>Have Any <span>Questions?</span></p>
-                                        <a href="tel:+980045647823">+980-045-647-823</a>
+                                        <a href="tel:+919512327005">+91 951-232-7005</a>
                                     </div>
                                 </div>
                             </div>
@@ -32,7 +35,7 @@ function Header() {
                                 <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                     <ul className="navbar-nav">
                                         <li className="nav-item plus-icon">
-                                            <Link to={'/'} className="nav-link  active">Home</Link>
+                                            <Link to={'/'} className="nav-link  ">Home</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link to={"/services"} className="nav-link ">Services</Link>

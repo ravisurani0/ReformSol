@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.section-content .title:hover {
+  color: #0064fbc9;
+  text-decoration: none;
+}
