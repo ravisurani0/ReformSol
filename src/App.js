@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Services from './Pages/Services ';
+import ServiceDetails from './Pages/ServiceDetails';
 import OurTeam from './Pages/OurTeam';
 import CaseStudy from './Pages/CaseStudy';
 import CaseDetails from './Pages/CaseDetails';
@@ -15,12 +16,13 @@ function App() {
   return (
 
     <>
-       <HashRouter  >
+      <HashRouter  >
         {/* <Loading /> */}
         <Header />
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/services" Component={Services} />
+          <Route path="/service/:serviceSlug" Component={ServiceDetails} />
           <Route path="/our-team" Component={OurTeam} />
           <Route path="/case-study" Component={CaseStudy} />
           <Route path="/case-study/:caseStudySlug" Component={CaseDetails} />

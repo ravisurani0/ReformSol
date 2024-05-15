@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-function Services() {
+import { getExelDataAction } from "../Redux/actions/ExelDataActions";
+import { connect } from "react-redux";
+
+function Services({ exelDetails, getExelDataAction }) {
+
+    useEffect(() => {
+        getExelDataAction()
+    }, [])
+
+    console.log('exelDetails', exelDetails)
+
     return (
         <>
             <div className="uni-banner">
@@ -14,8 +24,6 @@ function Services() {
                     </div>
                 </div>
             </div>
-
-
             <div className="service ptb-100">
                 <div className="container">
                     <div className="default-section-title default-section-title-2 default-section-title-middle">
@@ -24,96 +32,27 @@ function Services() {
                     </div>
                     <div className="section-content">
                         <div className="row">
-                            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div className="service-card-2">
-                                    <span></span>
-                                    <div className="service-card-content">
-                                        <div className="service-card-2-img">
-                                            <img src="assets/images/icons/011-content-1.png" alt="image" />
-                                        </div>
-                                        <h4>Content Management</h4>
-                                        <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
-                                            labore magna aliqua dolor ipsum insididunt aliqua.</p>
-                                        {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
+                            {exelDetails?.data &&
+                                exelDetails?.data.map(service => {
+                                    return <div className="col-lg-4 col-md-6 col-sm-12 col-12" >
+                                        <Link to={'/service/' + service.slug}>
+                                            <div className="service-card-2">
+                                                <span></span>
+                                                <div className="service-card-content">
+                                                    <div className="service-card-2-img">
+                                                        <img src="assets/images/icons/011-content-1.png" alt="image" />
+                                                    </div>
+                                                    <h4>{service.title}</h4>
+                                                    <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
+                                                        labore magna aliqua dolor ipsum insididunt aliqua.</p>
+                                                    {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
                                             className="fas fa-long-arrow-alt-right"></i></a> */}
+                                                </div>
+                                            </div>
+                                        </Link>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div className="service-card-2">
-                                    <span></span>
-                                    <div className="service-card-content">
-                                        <div className="service-card-2-img">
-                                            <img src="assets/images/icons/012-analytic.png" alt="image" />
-                                        </div>
-                                        <h4>Statistic Analysis</h4>
-                                        <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
-                                            labore magna aliqua dolor ipsum insididunt aliqua.</p>
-                                        {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
-                                            className="fas fa-long-arrow-alt-right"></i></a> */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div className="service-card-2">
-                                    <span></span>
-                                    <div className="service-card-content">
-                                        <div className="service-card-2-img">
-                                            <img src="assets/images/icons/013-customer-service-agent.png" alt="image" />
-                                        </div>
-                                        <h4>Support Service</h4>
-                                        <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
-                                            labore magna aliqua dolor ipsum insididunt aliqua.</p>
-                                        {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
-                                            className="fas fa-long-arrow-alt-right"></i></a> */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div className="service-card-2">
-                                    <span></span>
-                                    <div className="service-card-content">
-                                        <div className="service-card-2-img">
-                                            <img src="assets/images/icons/025-browser.png" alt="image" />
-                                        </div>
-                                        <h4>Security Management</h4>
-                                        <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
-                                            labore magna aliqua dolor ipsum insididunt aliqua.</p>
-                                        {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
-                                            className="fas fa-long-arrow-alt-right"></i></a> */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div className="service-card-2">
-                                    <span></span>
-                                    <div className="service-card-content">
-                                        <div className="service-card-2-img">
-                                            <img src="assets/images/icons/022-language.png" alt="image" />
-                                        </div>
-                                        <h4>Smart Notification</h4>
-                                        <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
-                                            labore magna aliqua dolor ipsum insididunt aliqua.</p>
-                                        {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
-                                            className="fas fa-long-arrow-alt-right"></i></a> */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div className="service-card-2">
-                                    <span></span>
-                                    <div className="service-card-content">
-                                        <div className="service-card-2-img">
-                                            <img src="assets/images/icons/030-pencil.png" alt="image" />
-                                        </div>
-                                        <h4>Unlimited Customization</h4>
-                                        <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
-                                            labore magna aliqua dolor ipsum insididunt aliqua.</p>
-                                        {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
-                                            className="fas fa-long-arrow-alt-right"></i></a> */}
-                                    </div>
-                                </div>
-                            </div>
+                                })
+                            }
                         </div>
                         {/* <div className="pagination mt-30">
                             <ul>
@@ -125,9 +64,20 @@ function Services() {
                         </div> */}
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 }
 
-export default Services;
+const mapStateToProps = (state) => {
+    return {
+        exelDetails: state.ExelDataReducer,
+    };
+};
+
+export default connect(
+    mapStateToProps,
+    {
+        getExelDataAction
+    }
+)(Services);

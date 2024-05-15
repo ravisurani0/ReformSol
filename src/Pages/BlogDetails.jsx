@@ -85,7 +85,6 @@ function BlogDetails() {
 
     let blogSlug = useParams();
     let blogDetais = blogList.filter(blog => blog.slug == blogSlug.blogSlug)[0];
-    console.log(blogDetais)
 
     return (
         <>
