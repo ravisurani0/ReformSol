@@ -1,5 +1,4 @@
 import axios from "axios";
-import { BASE_URL } from '../contants';
 
 const headers = {
   "Accept": "application/json",
@@ -20,7 +19,7 @@ const getToken = () => {
 
 // Get All Record Service
 const getService = (url = '') => {
-  return axios.get(BASE_URL + `${url}`, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
+  return axios.get(`${url}`, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
     .then(Response => Response.data)
     .catch(error => {
       console.error('Api Error =>', error.message)
@@ -30,7 +29,7 @@ const getService = (url = '') => {
 
 // Get Selected Record Service
 const getByIdService = (url = '', id = null) => {
-  return axios.get(BASE_URL + `${url}/${id}`, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
+  return axios.get(`${url}/${id}`, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
     .then(Response => Response.data)
     .catch(error => {
       console.error('Api Error =>', error.message)
@@ -40,7 +39,7 @@ const getByIdService = (url = '', id = null) => {
 
 // Post/Create Record Service
 const createService = (url = '', data = null) => {
-  return axios.post(BASE_URL + `${url}`, data, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
+  return axios.post(`${url}`, data, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
     .then(Response => Response.data)
     .catch(error => {
       console.error('Api Error =>', error.message)
@@ -60,7 +59,7 @@ const updateService = (url = '', id = null, data = null) => {
 
 // Delete/Remove Record Service
 const deleteService = (url = '', id = null) => {
-  return axios.delete(BASE_URL + `${url} / ${id}`, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
+  return axios.delete(`${url} / ${id}`, { headers: { ...headers, "Authorization": `Bearer ${getToken()}` } })
     .then(Response => Response.data)
     .catch(error => {
       console.error('Api Error =>', error.message)

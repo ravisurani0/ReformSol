@@ -3,10 +3,10 @@ import { connect } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 
 
-function BlogDetails({ exelDetailsList }) {
+function BlogDetails({ ServiceDetailsList }) {
 
     let serviceSlug = useParams();
-    let serviceDetails = exelDetailsList?.data.filter(blog => blog.slug == serviceSlug.serviceSlug)[0];
+    let serviceDetails = ServiceDetailsList?.data.filter(blog => blog.slug == serviceSlug.serviceSlug)[0];
 
     console.log('serviceDetails',serviceDetails)
     return (
@@ -92,14 +92,14 @@ function BlogDetails({ exelDetailsList }) {
 
 const mapStateToProps = (state) => {
     return {
-        exelDetailsList: state.ExelDataReducer,
+        ServiceDetailsList: state.ServiceExelDataReducer,
     };
 };
 
 export default connect(
     mapStateToProps,
     {
-        // getExelDataAction
+        // getServiceExelDataAction
     }
 )(BlogDetails);
 

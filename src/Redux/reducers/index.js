@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 // Message Reducer
-import { ExelDataReducer } from "./ExelDataReducer.js";
+import { BlogExelDataReducer, ServiceExelDataReducer } from "./ExelDataReducer.js";
 
 const reducers = combineReducers({
-    ExelDataReducer,
+    ServiceExelDataReducer, BlogExelDataReducer
 });
 
 export default reducers;

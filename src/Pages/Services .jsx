@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getExelDataAction } from "../Redux/actions/ExelDataActions";
+import { getServiceExelDataAction } from "../Redux/actions/ExelDataActions";
 import { connect } from "react-redux";
 
-function Services({ exelDetails, getExelDataAction }) {
+function Services({ ServiceDetails, getServiceExelDataAction }) {
 
     useEffect(() => {
-        getExelDataAction()
+        getServiceExelDataAction()
     }, [])
 
-    console.log('exelDetails', exelDetails)
+    console.log('ServiceDetails', ServiceDetails)
 
     return (
         <>
@@ -32,8 +32,8 @@ function Services({ exelDetails, getExelDataAction }) {
                     </div>
                     <div className="section-content">
                         <div className="row">
-                            {exelDetails?.data &&
-                                exelDetails?.data.map(service => {
+                            {ServiceDetails?.data &&
+                                ServiceDetails?.data.map(service => {
                                     return <div className="col-lg-4 col-md-6 col-sm-12 col-12" >
                                         <Link to={'/service/' + service.slug}>
                                             <div className="service-card-2">
@@ -43,8 +43,7 @@ function Services({ exelDetails, getExelDataAction }) {
                                                         <img src="assets/images/icons/011-content-1.png" alt="image" />
                                                     </div>
                                                     <h4>{service.title}</h4>
-                                                    <p>Lorem ipsum dolor amet magna set dolor sit amet consectetur adipis cing do elite
-                                                        labore magna aliqua dolor ipsum insididunt aliqua.</p>
+                                                    <p>{service.description}</p>
                                                     {/* <a className="default-button-3 default-button-3-h" href="#">Read More <i
                                             className="fas fa-long-arrow-alt-right"></i></a> */}
                                                 </div>
@@ -71,13 +70,13 @@ function Services({ exelDetails, getExelDataAction }) {
 
 const mapStateToProps = (state) => {
     return {
-        exelDetails: state.ExelDataReducer,
+        ServiceDetails: state.ServiceExelDataReducer,
     };
 };
 
 export default connect(
     mapStateToProps,
     {
-        getExelDataAction
+        getServiceExelDataAction
     }
 )(Services);

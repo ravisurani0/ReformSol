@@ -2540,7 +2540,8 @@ a.meanmenu-reveal {
     margin-top: 30px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    min-height: 90%;
 }
 
 .service-card-2 span {
