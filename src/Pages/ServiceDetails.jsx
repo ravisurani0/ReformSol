@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Link, useParams } from "react-router-dom";
+import { getServiceExelDataAction } from "../Redux/actions/ExelDataActions";
 
 
-function BlogDetails({ ServiceDetailsList }) {
-
+function BlogDetails({ ServiceDetailsList, getServiceExelDataAction }) {
     let serviceSlug = useParams();
-    let serviceDetails = ServiceDetailsList?.data.filter(blog => blog.slug == serviceSlug.serviceSlug)[0];
 
-    console.log('serviceDetails',serviceDetails)
+    const [serviceDetails, setServiceDetails] = useState();
+    useEffect(() => {
+        getServiceExelDataAction()
+    }, [])
+
+    useEffect(() => {
+        if (ServiceDetailsList) {
+            setServiceDetails(ServiceDetailsList?.filter(blog => blog.slug == serviceSlug.serviceSlug)[0]);
+        }
+    }, [ServiceDetailsList])
+
+    console.log('serviceDetails', serviceDetails)
     return (
         <>
             <div className="uni-banner">
@@ -92,14 +102,14 @@ function BlogDetails({ ServiceDetailsList }) {
 
 const mapStateToProps = (state) => {
     return {
-        ServiceDetailsList: state.ServiceExelDataReducer,
+        ServiceDetailsList: state.ServiceExelDataReducer?.data,
     };
 };
 
 export default connect(
     mapStateToProps,
     {
-        // getServiceExelDataAction
+        getServiceExelDataAction
     }
 )(BlogDetails);
 

@@ -13,7 +13,7 @@ function BlogDetails({ BlogDetailsList, getBlogExelDataAction }) {
         getBlogExelDataAction()
     }, [])
 
-    console.log('BlogDetailsList', BlogDetailsList)
+  
     useEffect(() => {
         if (BlogDetailsList) {
             setBlogDetais(BlogDetailsList?.filter(blog => blog.slug == blogSlug.blogSlug)[0]);
