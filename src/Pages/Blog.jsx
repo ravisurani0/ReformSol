@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { getBlogExelDataAction } from "../Redux/actions/ExelDataActions";
+import { getBlogExelDataAction } from "../ReduxStore/actions/ExelDataActions";
 
 import { Link } from "react-router-dom";
 function Blogs({ BlogDetailsList, getBlogExelDataAction }) {
