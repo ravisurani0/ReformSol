@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReformSol/static/css/main.d5542174.css",
+    "main.js": "/ReformSol/static/js/main.f305d2cd.js",
+    "static/js/453.ed5ffd7d.chunk.js": "/ReformSol/static/js/453.ed5ffd7d.chunk.js",
+    "index.html": "/ReformSol/index.html",
+    "main.d5542174.css.map": "/ReformSol/static/css/main.d5542174.css.map",
+    "main.f305d2cd.js.map": "/ReformSol/static/js/main.f305d2cd.js.map",
+    "453.ed5ffd7d.chunk.js.map": "/ReformSol/static/js/453.ed5ffd7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5542174.css",
+    "static/js/main.f305d2cd.js"
+  ]
+}
